@@ -106,7 +106,7 @@ func TaskID(id string) Option {
 	return taskIDOption(id)
 }
 
-func (id taskIDOption) String() string     { return fmt.Sprintf("TaskID(%q)", string(id)) }
+func (id taskIDOption) String() string     { return fmt.Sprintf("MyTaskID(%q)", string(id)) }
 func (id taskIDOption) Type() OptionType   { return TaskIDOpt }
 func (id taskIDOption) Value() interface{} { return string(id) }
 
